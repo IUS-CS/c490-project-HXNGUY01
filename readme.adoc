@@ -8,8 +8,6 @@ You will create a document to describe the particular Android project you wish t
 
 == Section 1 – Motivation for Your App
 
-In this section, describe the motivation behind your choice of app to design and implement. Also indicate who is the target user base. Include references to existing apps that are similar to the app you are proposing – references must include the name of the app, the platform (e.g., iOS, Android, Windows, MacOS, etc.), and a link to a website describing the app.
-
 I will be making a recipe app, where user can create and store their own recipe in to a list. User will also be able to use the built-in search function to look up foods online along with its own recipes and the ability to add the products found online to their existing list along with its recipes. The target audiences for this app are people that want to know certain recipes to the foods that they haven't try and users that one a handy list to store their own recipes.
 
 Some of the recipe/food apps that have similar functions can be primarily found on this website:
