@@ -3,7 +3,7 @@
 
 == Section 1 – Motivation for Your App
 
-I will be making a recipe app, where user can create and store their own recipe in to a list. User will also be able to use the built-in search function to look up foods online along with its own recipes and the ability to add the products found online to their existing list along with its recipes. The target audiences for this app are people that want to know certain recipes to the foods that they haven't try and users that one a handy list to store their own recipes.
+I will be making a recipe app, where user can create and store their own recipe in to a list. User will also be able to use the built-in search function to look up foods online along with its own recipes and the ability to add the products found online to their existing list along with its recipes. The target audiences for this app are people that want to know certain recipes to the foods that they haven't try and users that want a handy list to store their own recipes.
 
 Some of the recipe/food apps that have similar functions can be primarily found on this website:
 
