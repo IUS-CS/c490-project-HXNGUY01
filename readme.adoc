@@ -1,10 +1,5 @@
-= CSCI C490 Design Document Requirements
+= CSCI C490 Project - Recipe Manager 
 
-You will create a document to describe the particular Android project you wish to complete for this course.
-
-. Create a new Markdown or Asciidoctor document to replace this readme document.
-. Format your document with proper headings, sections, paragraphs, etc.
-. Your document should include descriptions of the rest of this document in copmelete and professional prose.
 
 == Section 1 – Motivation for Your App
 
@@ -26,19 +21,15 @@ Finally, for this section, describe how your app will communicate to the outside
 
 === 2.1 User Interface
 
-1. Must work in both landscape and portrait configuration and not lose any of the user's input when switching between configurations, and/or screens
-2. There can be an exception to #1, but in your initial design document, you must make a compelling argument for it to work in only one configuration
-3. Must work on both the Samsung Tab A 10.1" and the Nexus Asus 7" tablets
-4. There can be an exception to #3, but in your initial design document, you must make a compelling argument for it
-to work on only one of these devices
-5. You must submit diagrams for all the different screens in your app (both portrait and landscape configurations),
-one diagram per screen. These diagrams must clearly show the layout of your app's screens, i.e., where images, menus, widgets, views, etc., appear. These can be hand drawn with a .png submitted of the drawing.
+There are two main screens on the app. Those screens are the default adding recipe screen and the search recipe screen.
+
+***Note to self: Add diagrams and more info later. 
+
 
 === 2.2 Data Persistence
 
-1. Your app must demonstrate that it saves data from one use to another
-2. To test this, your app will be shut down by an onDestroy() event, and then restarted
-3. Data entered in by the user during one use must be present when the app is restarted for another use
+Data in this app will be stored in a SQLite database. There aren't much data to be store so data will be stored on the device. Data will be added when user choose to add a recipe of their own into their respective fields, data will be retrieved at the onCreate for the createtable function, there will also be an onUpgrade that will drop the old table and add a new table once triggered. 
+
 
 === 2.3 Communication
 This app will communicate with the outside world via its search function. The app will be using a simple RESTAPI called recipepuppy, this api lets you search through recipe puppy database of over a million recipes by keyword and/or by search query. The api is accessible at http://www.recipepuppy.com/api/. I found this API by googling recipe api, I haven't decided on a Rest Client yet to retrive and return the json but I've looked online and found that people mostly recommend RetroFit so I'll look into that.
