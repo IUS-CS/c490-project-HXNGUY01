@@ -13,19 +13,34 @@ I haven't tried them all but I've looked at BBC Good Food and its idea of a buil
 
 == Section 2 - Meeting Minimum Requirements
 
-In this section, describe using sentences and paragraphs written in English, the screens included in your app’s user interface. Include in this text portion the required diagrams (see below, 2.1 User Interface, Item #5). Describe how your app will not lose any user’s input data when switching between configurations and also among the various screens supported by your app. Items #2 and #4 (below) indicate that exceptions can be made, if you are electing to exercise one or both of these exception, then here is where you must make a compelling argument for the exception.
-
-Additionally, for this section, you must describe how your app will meet the data persistence requirement. Describe where the data will be stored (e.g., on the device, in the cloud, etc.), how it will be stored (e.g., in an SQL database), at what points during app execution that the storage of data will occur (consider using the Android app Life Cycle for describing when), how the data will be retrieved upon restart of the app, and at what point it will be retrieved (again, consider utilizing the Android app Life Cycle).
-
-Finally, for this section, describe how your app will communicate to the outside world. By what means (e.g., Bluetooth, Wi-Fi to Internet, etc.), for what purpose this outside world communication serves with respect to supporting the app’s functionality, and describe what devices or external resources are on the other end of the communication. If the device or other resource at the other end of the communication is going to be created by you (i.e., it does not already exist), then you must give specific details on how you will setup and configure this other device/resource.
-
 === 2.1 User Interface
 
 There are two main screens on the app. Those screens are the default adding recipe screen and the search recipe screen.
 
-***Note to self: Add diagrams and more info later. 
+== Add
+ 
 
-
+There are two sub-screens on the Add Screen:
+• Default screen
+  ∙ User can see a list of recipe that they've created
+  ∙ User have the option to click one of the listed recipe to edit the recipe chosen
+  ∙ User can click on the add button to assign their own recipe to the list  
+• Recipe Screen
+   ∙ User input into open field the name, ingredients and instructions of how to make the recipe.
+   ∙ User can click submit after done to add the recipe to their list.
+   
+There are two sub-screens to the Search Screen:
+• Default screen
+  ∙ User can enter their choosen recipe and click search, the built in search engine will then proceed to look up online and find the closest match to user's chosen product
+• Browser Screen
+  ∙ After searching for a recipe, user will be present with a list of found products online along with its recipe
+  ∙ User can either click on the name or picture of the product, their information will be saved onto a list. 
+  ∙ CLicking Add Recipe on the top right corner of the screen after chosing their products will add that product along with its recipe to the main screen.
+  
+== Handrawn layouts
+[caption="Image: "]
+image::https://imgur.com/a/4PwTrzt
+  
 === 2.2 Data Persistence
 
 Data in this app will be stored in a SQLite database. There aren't much data to be store so data will be stored on the device. Data will be added when user choose to add a recipe of their own into their respective fields, data will be retrieved at the onCreate for the createtable function, there will also be an onUpgrade that will drop the old table and add a new table once triggered. 
