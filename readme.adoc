@@ -52,7 +52,7 @@ There are two sub-screens to the Search Screen:
   ∙ CLicking Add Recipe on the top right corner of the screen after chosing their products will add that product along with its recipe to the main screen.
   
 == Handrawn layouts
-image::https://imgur.com/a/4PwTrzt[]
+image::20191009_200838.jpg[float='left']
   
 === 2.2 Data Persistence
 
