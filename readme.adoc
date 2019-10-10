@@ -15,7 +15,7 @@ I haven't tried them all but I've looked at BBC Good Food and its idea of a buil
 
 === 2.1 User Interface
 
-There are two main screens on the app. Those screens are the default adding recipe screen and the search recipe screen.
+There are two main screens on the app. Those screens are the default adding recipe screen and the search recipe screen. Also I think a list would work better in portrait screen rather than landscape, since there isn't a lot of information being displayed for each product/recipe and for a long list your finger would feel more natural doing a downward swiping motion going through a list in portrait mode rather than in landscape. It's kinda like going through your phone number list, short amount of informations being displayed to me means easily controll in a smaller controllable field. 
 
 == Add
  
