@@ -74,20 +74,17 @@ There are a couple of ways you might go about organizing this section of your do
 
 === 3.1 View Descriptions
 
-In the description of each screen’s view, provide a diagram (See Section 2.1, above for details about this diagram). These diagrams will more than likely be identical to the ones used to satisfy Section 2 requirements, that is permissible. If the screen contains active widgets, e.g., a Button, then for each of these active widgets you must describe how the user interacts with the widget, what happens when the user does interact with the widget, and the name of the method/operation that is the “listener” for the widget – e.g., user pushes OK button to go back to previous screen, the goBack method in the Java class DataEntryActivity is the listener for this Button.
+image::20191009_200838.jpg[float='left']
 
-Include in this part the name of the .xml Layout file associated with each View and the various minimum screen sizes supported (in dp), e.g., 600dp and 800dp. Please include the root layout utilized by each View, e.g., ConstraintLayout, GridLayout, LinearLayout, etc., and why you elected to choose that particular root layout. It might be possible that you have decided to construct a View by writing Java methods and that the View’s .xml file is minimal. If that is the case be sure to name the controller that will be constructing your View along with the names of the methods that will have the implementation code.
+Some xml files activity main, activity main for web, add recipe page, save recipe page, result of saved recipe as a list on the home screen, list of item, searchs that found online are saved, results that are saved.
 
 === 3.2 Model Descriptions
 
-Start off with a high-level description of what data needs to be stored, and what Java classes and/or databases/external resources will be utilized to store this data.
 
-For each Java class used to store data, you must supply the name of the class, and a list of all public methods called by clients of the class (note: Controller classes are the likely clients). If a method has a precondition that must be satisfied by the calling client, e.g., a setter method that stores positive integer, then you must include a requires clause stating what the precondition is – this requires clause can be written in English or user mathematics if possible. Utilize design by contract in your design of the model java classes, i.e., if a setter method stores only positive integers, the setter method has a requires clause indicating that the value being supplied by the client must be positive, and the setter method does not have an if statement to check the requires clause.
-
-If your app’s model is utilizing an SQL database or some resource in the cloud, then you must provide a detailed description of this database/resource. For example, for a database answer at least the following, what tables will be present, what columns are in each of the tables, what are the data types of each of the columns, which column (if any) is the key field, how the tables relate to one another, etc.
+The model will contain 3 main things, file to store recipe, file to host custom recipe and file to store the result of recipe found onlnine. App's model will use SQLite database to store values listed above while also utilizing recipepuppy API for its search engine and the values found online will be forwarded to the sqlite tables. The table for recipe will have its id, title, ingeredients, instructions and hopefully picture. The custom recipe in which user can port recipe found online to their list's table will have its link ( name) ingridents, title and hopefully its thumbnail that are use on the cloud can be imported too.
 
 === 3.3 Controller Descriptions
 
-Start off with a high-level description of each controller and what screen it controls. Then include which Life Cycle methods are overridden by the controller. This part of the description will almost certainly have to include as a minimum how onCreate is implemented. Describe how and when the controller saves off data into the model, and how and when it retrieves data from the model.
+SaveRecipe controller will control the custom recipe that are saved into the list. CustomRecipe will control what are found online that will be store onto the list. Add recipe will call saverecipe to make sure when adding your recipe to the list the progress are saved. addrecipeweb will make sure that recipes found online are saved when prompt to added onto your list.
 
-You must describe how your app will satisfy the data persistence requirement in the controller descriptions and/or the model descriptions. If the model is designed so that it always keeps the persistent data store up-to-date, then the model description will more than likely discuss persistence. If the controller is implemented to update the persistent data store at some specific time of the app’s life cycle, then the controller’s description will more than likely discuss persistence. The discussion might need to appear in both the model and the controller descriptions.
+
