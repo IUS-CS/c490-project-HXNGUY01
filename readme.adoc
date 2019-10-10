@@ -21,25 +21,38 @@ There are two main screens on the app. Those screens are the default adding reci
  
 
 There are two sub-screens on the Add Screen:
+
 • Default screen
+
   ∙ User can see a list of recipe that they've created
+  
   ∙ User have the option to click one of the listed recipe to edit the recipe chosen
+  
   ∙ User can click on the add button to assign their own recipe to the list  
+  
 • Recipe Screen
+
    ∙ User input into open field the name, ingredients and instructions of how to make the recipe.
+   
    ∙ User can click submit after done to add the recipe to their list.
    
+   
 There are two sub-screens to the Search Screen:
+
 • Default screen
+
   ∙ User can enter their choosen recipe and click search, the built in search engine will then proceed to look up online and find the closest match to user's chosen product
+  
 • Browser Screen
+
   ∙ After searching for a recipe, user will be present with a list of found products online along with its recipe
+  
   ∙ User can either click on the name or picture of the product, their information will be saved onto a list. 
+  
   ∙ CLicking Add Recipe on the top right corner of the screen after chosing their products will add that product along with its recipe to the main screen.
   
 == Handrawn layouts
-[caption="Image: "]
-image::https://imgur.com/a/4PwTrzt
+image::https://imgur.com/a/4PwTrzt[]
   
 === 2.2 Data Persistence
 
