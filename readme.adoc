@@ -45,14 +45,6 @@ There are two sub-screens to the Search Screen:
 
   ∙ User can enter their choosen recipe and click search, the built in search engine will then proceed to look up online and find the closest match to user's chosen product
   
-• Browser Screen
-
-  ∙ After searching for a recipe, user will be present with a list of found products online along with its recipe
-  
-  ∙ User can either click on the name or picture of the product, their information will be saved onto a list. 
-  
-  ∙ CLicking Add Recipe on the top right corner of the screen after chosing their products will add that product along with its recipe to the main screen.
-  
 == Handrawn layouts
 image::20191009_200838.jpg[float='left']
   
