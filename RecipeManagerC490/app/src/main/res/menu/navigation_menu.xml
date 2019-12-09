@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationRecipeList"
+        android:icon="@drawable/pizza_thing"
+        android:title="@string/list_recipe"/>
+
+    <item
+        android:id="@+id/navigationSearchRecipe"
+        android:icon="@drawable/search_thing"
+        android:title="@string/search_recipe"/>
+
+</menu>

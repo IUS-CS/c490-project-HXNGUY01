@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reclyclerSearchrecipe"
+    android:name="com.example.recipemanagerc490.Fragments.SearchResultFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food_background"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".Fragments.SearchResultFragment"
+    tools:listitem="@layout/searched_result_fragment" />
